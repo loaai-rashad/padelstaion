@@ -1,0 +1,33 @@
+.carousel {
+    overflow: hidden;
+    cursor: grab;
+    margin-top: 30px;
+}
+
+.inner-carousel {
+    display: flex;
+    
+}
+
+.item {
+    min-height: 25rem;
+    min-width: 20rem;
+    padding:30px 1px;
+    padding-left: 0px;
+}
+
+.item img{
+    width:100%;
+    height:90%;
+    border-radius:0.5rem;
+    pointer-events: none;
+}
+
+
+/* Media query for desktop screens (adjust breakpoint as needed) */
+@media (min-width: 768px) {  /* Adjust breakpoint for your desired desktop size */
+    .item img {
+        width: 120%;  /* Increase width for larger image on desktop */
+        
+    }
+}

@@ -1,0 +1,33 @@
+.footer {
+  margin-top: auto;
+  display: flex;
+  background-color: #3F2A9DFF;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.footer .content {
+  margin: 0 auto;
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+}
+
+.footer .content p {
+  margin-right: 10px; 
+  margin: 0; 
+}
+
+.footer .content .instagram-link {
+  margin-right: 10px; 
+  margin-left: 10px;
+}
+
+.footer .content h3 {
+  margin: 0 20px 0 0; 
+  font-size: 16px; 
+}

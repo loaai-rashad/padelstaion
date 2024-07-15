@@ -1,0 +1,100 @@
+/* Button to open modal */
+.add-event-button {
+  background-color: #5400a0; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 19px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal overlay */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Ensure overlay covers the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Ensure overlay is above other elements */
+}
+
+/* Modal content */
+.ReactModal__Content {
+  max-width: 400px; 
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1001; /* Ensure modal content is above overlay */
+}
+
+/* Form container */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px
+}
+
+/* Form elements */
+.modal-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal-form input {
+  /* margin-bottom: 15px; */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5400a0;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-form button:hover {
+  background-color: #6a00c0;
+}
+
+/* Hide the clock icon in the TimePicker */
+.hide-clock-icon .MuiSvgIcon-root {
+  display: none;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .ReactModal__Content {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .modal-form input {
+    padding: 8px;
+  }
+
+  .modal-form button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .add-event-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
